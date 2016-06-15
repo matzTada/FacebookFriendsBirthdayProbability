@@ -5,8 +5,9 @@ Facebookに何人友達がいたら毎日誕生日通知が来るのか問題
 
 結果だけ先に書くとこんな感じです  
 式  
-
-結果
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula1.png" alt=""></a>  
+結果  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/facebookBirthday.png" alt=""></a>  
 
 数学も英語も素人なので間違ってたら教えてください．
 
@@ -24,7 +25,8 @@ Facebookで何人友達がいたら，毎日誕生日通知が来るのか
 名前の通り[高校数学の美しい物語](http://mathtrain.jp/tyohukuc)さんが分かりやすい解説してるので，大学入試が控えてる方はこちらもどうぞ．  
 そもそもの組み合わせに関しては「組合せ(数学)[Wikipedia](https://ja.wikipedia.org/wiki/%E7%B5%84%E5%90%88%E3%81%9B_(%E6%95%B0%E5%AD%A6))]をどうぞ
 
-以下では表記の関係上
+以下では表記の関係上，最もポピュラー(ってWikipediaに書いてあった)
+
 
 ## Formula
 Explanation.  
@@ -33,5 +35,3 @@ Explanation.
 * [link](https://matztada.github.io)
 
 ## Result
-
-<a><img src="https://matztada.github.io/images/logo.jpg" alt="" width=50%></a>  
