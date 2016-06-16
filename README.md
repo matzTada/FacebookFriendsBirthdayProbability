@@ -6,7 +6,7 @@ Facebookに何人友達がいたら毎日誕生日通知が来るのか問題
 結果だけ先に書くとこんな感じです  
 
 式  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula1.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula1.png" alt="" height=50></a>  
 結果  
 <a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/facebookBirthday.png" alt=""></a>  
 
@@ -33,26 +33,26 @@ Facebookで何人友達がいたら，毎日誕生日通知が来るのか
 以下では表記の関係上，最もポピュラー(ってWikipediaに書いてあった)な表現方法で書きます．それぞれ以下の通りです．    
 
 「n個の中からk個選ぶ場合の数(組み合わせ)」  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula2.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula2.png" alt="" height=40></a>  
 
 「m種類の中から重複を許してr個を選ぶ場合の数(組み合わせ)」  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula3.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula3.png" alt="" height=40></a>  
 
 ## Formula
 実はProblemとBasicを組み合わせるだけで解けます．何なら習って1日目で解けますな．  
 
 全ての場合の数Aは
 「365種類(誕生日)の中から重複を許してN個(人)を選ぶ場合の数(組み合わせ)」  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula4.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula4.png" alt="" height=50></a>  
 
 毎日誰かしらの誕生日である場合の数Bは  
 「先に365種類に対して1個ずつ割り当てておく(誰かしらが必ず誕生日)．そのあとで余った人を重複を許して割り振る」ので  
 「365種類(誕生日)の中から重複を許してN-365個(人)を選ぶ場合の数(組み合わせ)」  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula5.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula5.png" alt="" height=50></a>  
 
 よって，求める「Facebookで何人友達がいたら，毎日誕生日通知が来るのか」もとい  
 「365種類(誕生日)の中から重複を許してN個(人)を選ぶ時，すべての種類(誕生日)を少なくとも1個(人)以上選ぶ確率P」は  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula6.png" alt=""></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula6.png" alt="" height=60></a>  
 と求まるわけです．
 
 ## Result
@@ -62,8 +62,7 @@ Facebookで何人友達がいたら，毎日誕生日通知が来るのか
 ということで，伝家の宝刀Mathematicaを使いました．  
 式は非常にシンプルです．さすが．便利．  
 ```
-Plot[Binomial[n - 1, n - 365] / Binomial[365 + n - 1, n], {n, 365, 
-  5000000}]
+Plot[Binomial[n - 1, n - 365] / Binomial[365 + n - 1, n], {n, 365, 5000000}]
 ```  
 
 グラフ  
