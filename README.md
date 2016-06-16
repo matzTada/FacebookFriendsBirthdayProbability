@@ -52,7 +52,7 @@ Facebookで何人友達がいたら，毎日誕生日通知が来るのか
 
 よって，求める「Facebookで何人友達がいたら，毎日誕生日通知が来るのか」もとい  
 「365種類(誕生日)の中から重複を許してN個(人)を選ぶ時，すべての種類(誕生日)を少なくとも1個(人)以上選ぶ確率P」は  
-<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula6.png" alt="" height=60></a>  
+<a><img src="https://raw.githubusercontent.com/matzTada/FacebookFriendsBirthdayProbability/master/image/formula6.png" alt="" height=70></a>  
 と求まるわけです．
 
 ## Result
@@ -70,7 +70,7 @@ Plot[Binomial[n - 1, n - 365] / Binomial[365 + n - 1, n], {n, 365, 5000000}]
 
 以上です．おしまいおしまい．  
 グラフを見ると(ちゃんと計算しろ)だいたい1,000,000人を超えると，確率が0.9を超えるみたいです．  
-筆者の現状の人数では2.23×10のマイナス101乗でした．ほぼゼロですね．  
+筆者の現状の人数ではP=2.23×10^(-101)でした．ほぼゼロですね．  
 
 Excelファイル，Processingプログラム，Mathematicaノートブック全てこのディレクトリにあります．  
 うん，なんというか，数式をするのも含めて，いろいろ練習段階って感じですが，最後まで読んでいただいてありがとうございました．
