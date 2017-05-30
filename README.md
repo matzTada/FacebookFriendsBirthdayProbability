@@ -1,4 +1,4 @@
-#FacebookBirthdayProbability(Beta)
+# FacebookBirthdayProbability(Beta)
 In English and 日本語  
 Facebookに何人友達がいたら毎日誕生日通知が来るのか問題  
 よく「同じ誕生日の人がいる確率」というのありますが，今回は「全ての誕生日が誰かしらの誕生日」である確率を考えます．  
